@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    background: white;
+    margin: 0 auto;
+}
+
+#time {
+    margin-top: 100px;
+    font-size: 18px;
+    min-height: 22px;
+}
+
+button {
+    position: relative;
+    top: 0;
+    
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    
+    box-shadow: 0 5px #600;
+    
+    transition: all .3s ease-out;
+    
+    background: #C00;
+    color: white;
+}
+
+button:hover {
+    top: 6px;
+    box-shadow: 0 0 #600;
+}
+
+h1 {
+    text-align: center;
+}

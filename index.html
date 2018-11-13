@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='index.css'>
+        <title>Visual Sort</title>
+    </head>
+    <body>
+        <h1>Visual Sorting</h1>
+        
+        <span>Sort type:</span>
+        <br />
+        <select id='type'>
+            <option>Bubble Sort</option>
+            <option>Bubble Sort (faster)</option>
+            <option>Merge Sort</option>
+            <option>Quick Sort</option>
+            <option>Insertion Sort</option>
+            <option>Selection Sort</option>
+        </select>
+        <br /><br />
+        <span>Delay speed (ms):</span>
+        <br />
+        <input id='delay' type='number' value='0' step='10' min='0' max='1000' />
+        <br /><br />
+        <span>Frame skip:</span>
+        <br />
+        <input id='skip' type='number' value='0' step='1' min='0' max='1000' />
+        <br /><br />
+        <span>Array size:</span>
+        <br />
+        <input id='size' type='number' value='50' step='1' min='0' max='1000' />
+        <br />
+        <button id='sort'>Sort</button>
+        <button id='shuffle'>Shuffle</button>
+        <br />
+        
+        <div id='time'></div>
+        <canvas id='canvas' width='1000' height='600'></canvas>
+        
+        <script src='index.js'></script>
+        <script src='bubblesort.js'></script>
+        <script src='bubblesortfast.js'></script>
+        <script src='mergesort.js'></script>
+        <script src='quicksort.js'></script>
+        <script src='insertionsort.js'></script>
+        <script src='selectionsort.js'></script>
+    </body>
+</html>
